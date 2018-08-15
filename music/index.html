@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>音乐播放器</title>
+		<link type="text/css" rel="stylesheet" href="css/player.css">
+	</head>
+	<body>
+		<div id="QPlayer">
+			<div id="pContent">
+				<div id="player">
+					<span class="cover"></span>
+					<div class="ctrl">
+						<div class="musicTag marquee">
+							<strong>歌名</strong>
+							<span> - </span>
+							<span class="artist">歌手</span>
+						</div>
+						<div class="progress">
+							<div class="timer left">0:00</div>
+							<div class="contr">
+								<div class="rewind icon"></div>
+								<div class="playback icon"></div>
+								<div class="fastforward icon"></div>
+							</div>
+							<div class="right">
+								<div class="liebiao icon"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ssBtn">
+						<div class="adf"></div>
+				</div>
+			</div>
+			<ol id="playlist"></ol>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+	
+		<!--
+			Add music
+
+	{
+				title:"",
+				artist:"",
+				mp3:"http://music.163.com/song/media/outer/url?id=.mp3",
+				cover:"",
+			},
+
+		-->
+
+		<script>
+			var	playlist = [
+
+					{
+						title:"愿你",
+						artist:"昼夜",
+						mp3:"http://music.163.com/song/media/outer/url?id=498040739.mp3",
+						cover:"http://p1.music.126.net/aavuUhd_pcdPMYCsTtX9uQ==/109951163001207622.jpg?param=130y130",
+					},
+				];
+			var isRotate = true;
+			var autoplay = false;
+		</script>
+
+		<script type="text/javascript" src="js/player.js"></script>
+		
+		<script>
+			function bgChange(){
+				var lis= $('.lib');
+				for(var i=0; i<lis.length; i+=2)
+				lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+			}
+			window.onload = bgChange;
+		</script>
+	</body>
+</html>
