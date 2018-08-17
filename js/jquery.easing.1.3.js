@@ -1,3 +1,4 @@
+<meta http-equiv="expires"  content="Friday 11 May 2019 00:00 GMT" />
 /*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
  *
