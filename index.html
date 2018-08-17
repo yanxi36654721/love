@@ -17,12 +17,71 @@
 		<!-- Magnific Popup -->
 		<link rel="stylesheet" href="css/magnific-popup.css">
 		<!-- Salvattore -->
-		<link rel="stylesheet" href="css/salvattore.css">
+		<!--<link rel="stylesheet" href="css/salvattore.css">-->
 		<!-- Theme Style -->
 		<link rel="stylesheet" href="css/style.css">
 
 		<!-- Modernizr JS -->
 		<script src="js/modernizr-2.6.2.min.js"></script>
+
+		<style type="text/css">
+			/*
+				Spezific styling for salvattore
+				Feel free to edit it as you like
+				More info at http://salvattore.com
+			*/
+
+			/* Base styles */
+			.column {
+				float: left;
+			}
+			@media screen and (max-width: 480px) {
+				.column {
+					float: none;
+					position: relative;
+					clear: both;
+				}
+			}
+			.size-1of4 {
+				width: 25%;
+			}
+			.size-1of3 {
+				width: 33.333%;
+			}
+			.size-1of2 {
+				width: 50%;
+			}
+
+
+			#fh5co-board[data-columns]::before {
+				content: '4 .column.size-1of4';
+			}
+
+			/* Configurate salvattore with media queries */
+			@media screen and (max-width: 450px) {
+				#fh5co-board[data-columns]::before {
+					content: '1 .column';
+				}
+			}
+
+			@media screen and (min-width: 451px) and (max-width: 700px) {
+				#fh5co-board[data-columns]::before {
+					content: '2 .column.size-1of2';
+				}
+			}
+
+			@media screen and (min-width: 701px) and (max-width: 850px) {
+				#fh5co-board[data-columns]::before {
+					content: '3 .column.size-1of3';
+				}
+			}
+
+			@media screen and (min-width: 851px) {
+				#fh5co-board[data-columns]::before {
+					content: '4 .column.size-1of4';
+				}
+			}
+		</style>
 
 	</head>
 	<body>
@@ -233,8 +292,8 @@
 
 						<div class="item">
 							<div class="animate-box">
-								<a href="https://i.loli.net/2018/08/12/5b704a97e60b1.png" class="image-popup fh5co-board-img" title="小熊熊">
-									<img src="https://i.loli.net/2018/08/12/5b704a97e60b1.png" alt="Free HTML5 Bootstrap template">
+								<a href="https://i.loli.net/2018/08/17/5b7684caa6034.png" class="image-popup fh5co-board-img" title="小熊熊">
+									<img src="https://i.loli.net/2018/08/17/5b7684caa6034.png" alt="Free HTML5 Bootstrap template">
 								</a>
 							</div>
 							<div class="fh5co-desc">
