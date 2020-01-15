@@ -7,9 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Google Webfonts -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-		
+		<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,500" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
 		<!-- Animate.css -->
 		<link rel="stylesheet" href="css/animate.css">
 		<!-- Icomoon Icon Fonts-->
@@ -17,37 +17,97 @@
 		<!-- Magnific Popup -->
 		<link rel="stylesheet" href="css/magnific-popup.css">
 		<!-- Salvattore -->
-		<link rel="stylesheet" href="css/salvattore.css">
+		<!--<link rel="stylesheet" href="css/salvattore.css">-->
 		<!-- Theme Style -->
 		<link rel="stylesheet" href="css/style.css">
 
 		<!-- Modernizr JS -->
 		<script src="js/modernizr-2.6.2.min.js"></script>
 
+		<style type="text/css">
+			/*
+				Spezific styling for salvattore
+				Feel free to edit it as you like
+				More info at http://salvattore.com
+			*/
+
+			/* Base styles */
+			.column {
+				float: left;
+			}
+			@media screen and (max-width: 480px) {
+				.column {
+					float: none;
+					position: relative;
+					clear: both;
+				}
+			}
+			.size-1of4 {
+				width: 25%;
+			}
+			.size-1of3 {
+				width: 33.333%;
+			}
+			.size-1of2 {
+				width: 50%;
+			}
+
+
+			#fh5co-board[data-columns]::before {
+				content: "4 .column.size-1of4";
+			}
+
+			/* Configurate salvattore with media queries */
+			@media screen and (max-width: 450px) {
+				#fh5co-board[data-columns]::before {
+					content: "1 .column";
+				}
+			}
+
+			@media screen and (min-width: 451px) and (max-width: 700px) {
+				#fh5co-board[data-columns]::before {
+					content: "2 .column.size-1of2";
+				}
+			}
+
+			@media screen and (min-width: 701px) and (max-width: 850px) {
+				#fh5co-board[data-columns]::before {
+					content: "3 .column.size-1of3";
+				}
+			}
+
+			@media screen and (min-width: 851px) {
+				#fh5co-board[data-columns]::before {
+					content: "4 .column.size-1of4";
+				}
+			}
+		</style>
+
 	</head>
 	<body>
 		
 		<div id="fh5co-offcanvass">
 			<a href="#" class="fh5co-offcanvass-close js-fh5co-offcanvass-close">
-				<i class="icon-cross"></i>
+				<i class="icon-cross"></i> 
 			</a>
 			<h1 class="fh5co-logo">
-				<a class="navbar-brand" href="chat.html">午安</a>
+				<a class="navbar-brand" href="index.html">早安</a>
 			</h1>
+			
 			<ul>
-				<li>
-					<a href="index.html">主页</a>
-				</li>
 				<li class="active">
+					<a href="index.html">首页</a>
+				</li>
+				<li>
 					<a href="chat.html">闲聊</a>
 				</li>
 				<li>
 					<a href="about.html">关于</a>
 				</li>
 
-				<iframe width=242 height=80 frameborder="0" border="0" marginwidth="0" marginheight="0" src="https://music.163.com/outchain/player?type=2&id=450567505&auto=1&height=66"></iframe>
-			
+				<iframe width="242" height="80" frameborder="0" border="0" marginwidth="0" marginheight="0" src="https://music.163.com/outchain/player?type=2&id=450567505&auto=1&height=66"></iframe>
 			</ul>
+			
 			<h3 class="fh5co-lead">与我联系</h3>
 			<p class="fh5co-social-icons">
 				<a href="https://twitter.com/yanxi_tech" target="_blank">
@@ -60,7 +120,9 @@
 					<i class="icon-github"></i>
 				</a>
 			</p>
+
 		</div>
+
 		<header id="fh5co-header" role="banner">
 			<div class="container">
 				<div class="row">
@@ -68,7 +130,7 @@
 						<a href="#" class="fh5co-menu-btn js-fh5co-menu-btn">
 							<i class="icon-menu"></i>
 						</a>
-						<a class="navbar-brand" href="chat.html">午安</a>		
+						<a class="navbar-brand" href="index.html">早安</a>		
 					</div>
 				</div>
 			</div>
@@ -79,436 +141,13 @@
 		<div id="fh5co-main">
 			<div class="container">
 				<div class="row">
-					<div id="fh5co-board" data-columns>
-		
-						<!--Template
-						
-						<div class="item">
-							<div class="animate-box">
-								<a href="" class="image-popup fh5co-board-img" title="">
-									<img src="" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.
-							</div>
-						</div>
-			
-						-->
-		
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubvfoomgdj30f02tbhdz.jpg" class="image-popup fh5co-board-img" title="2018.2.8">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubvfoomgdj30f02tbhdz.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.8
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubvgad8akj30f01n7e84.jpg" class="image-popup fh5co-board-img" title="2018.2.9">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubvgad8akj30f01n7e84.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.9
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubvgt1vq1j30f03hcb2h.jpg" class="image-popup fh5co-board-img" title="2018.2.10">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubvgt1vq1j30f03hcb2h.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.10
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubvqrfw8sj309jcn04qq.jpg" class="image-popup fh5co-board-img" title="2018.2.11">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubvqrfw8sj309jcn04qq.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.11
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubvjh3l59j30f01cvtcq.jpg" class="image-popup fh5co-board-img" title="2018.2.12">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubvjh3l59j30f01cvtcq.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.12
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubvjolgobj30f02bqafk.jpg" class="image-popup fh5co-board-img" title="2018.2.13">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubvjolgobj30f02bqafk.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.13
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubvpuadrzj30f084iavt.jpg" class="image-popup fh5co-board-img" title="2018.2.14">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubvpuadrzj30f084iavt.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.14
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubvmh2x1nj30f09w51kx.jpg" class="image-popup fh5co-board-img" title="2018.2.15">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubvmh2x1nj30f09w51kx.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.15
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubvlzfa73j30f03pcgvu.jpg" class="image-popup fh5co-board-img" title="2018.2.16">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubvlzfa73j30f03pcgvu.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.16
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubw0joqnoj30f07rnx1e.jpg" class="image-popup fh5co-board-img" title="2018.2.17">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubw0joqnoj30f07rnx1e.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.17
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubw24cl77j30f037847o.jpg" class="image-popup fh5co-board-img" title="2018.2.18">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubw24cl77j30f037847o.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.18
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubw2wwwz9j30f00uhq4r.jpg" class="image-popup fh5co-board-img" title="2018.2.19">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubw2wwwz9j30f00uhq4r.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.19
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubw4yd2d4j30f05rue8f.jpg" class="image-popup fh5co-board-img" title="2018.2.20">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubw4yd2d4j30f05rue8f.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.20
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubw6rgp1nj30f0398npk.jpg" class="image-popup fh5co-board-img" title="2018.2.21">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubw6rgp1nj30f0398npk.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.21
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubw7a7gqaj30f00v6b2a.jpg" class="image-popup fh5co-board-img" title="2018.2.22">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubw7a7gqaj30f00v6b2a.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.22
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwdoxr6zj30f0bot7wh.jpg" class="image-popup fh5co-board-img" title="2018.2.23">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwdoxr6zj30f0bot7wh.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.23
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwf85p53j30escmt7wh.jpg" class="image-popup fh5co-board-img" title="2018.2.24">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwf85p53j30escmt7wh.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.2.24
-							</div>
-						</div>
-	
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwfs3ew5j30f012zu0y.jpg" class="image-popup fh5co-board-img" title="2018.3.25">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwfs3ew5j30f012zu0y.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.3.25
-							</div>
-						</div>
-	
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwgbiqyaj30f00b0nki.jpg" class="image-popup fh5co-board-img" title="2018.4.4">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwgbiqyaj30f00b0nki.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.4.4
-							</div>
-						</div>
-	
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwgqu9hlj30f00jce81.jpg" class="image-popup fh5co-board-img" title="2018.4.5">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwgqu9hlj30f00jce81.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.4.5
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwincapzj30f02v4479.jpg" class="image-popup fh5co-board-img" title="2018.4.6">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwincapzj30f02v4479.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.4.6
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwj3hkfcj30f00rx1ky.jpg" class="image-popup fh5co-board-img" title="2018.4.29">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwj3hkfcj30f00rx1ky.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.4.29
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwjx7nd2j30f09vi1kx.jpg" class="image-popup fh5co-board-img" title="2018.4.30">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwjx7nd2j30f09vi1kx.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.4.30
-							</div>
-						</div>
-	
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwkseksmj30f06wzqnl.jpg" class="image-popup fh5co-board-img" title="2018.5.1">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwkseksmj30f06wzqnl.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.5.1
-							</div>
-						</div>
-	
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwl8xoqjj30f00xyhdu.jpg" class="image-popup fh5co-board-img" title="2018.5.12">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwl8xoqjj30f00xyhdu.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.5.12
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwlz4stlj30f022ihdx.jpg" class="image-popup fh5co-board-img" title="2018.5.24">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwlz4stlj30f022ihdx.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.5.24
-							</div>
-						</div>
-					
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwot9pqyj30f01blkjn.jpg" class="image-popup fh5co-board-img" title="2018.5.25">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwot9pqyj30f01blkjn.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.5.25
-							</div>
-						</div>
-					
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwpmmifwj30f040yqve.jpg" class="image-popup fh5co-board-img" title="2018.5.26">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwpmmifwj30f040yqve.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.5.26
-							</div>
-						</div>
-					
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwq3bl1ij30f00g07wh.jpg" class="image-popup fh5co-board-img" title="2018.6.5">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwq3bl1ij30f00g07wh.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.6.5
-							</div>
-						</div>
-					
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwqs29wwj30f060zkby.jpg" class="image-popup fh5co-board-img" title="2018.6.6">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwqs29wwj30f060zkby.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.6.6
-							</div>
-						</div>
-					
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwrfoz4ej30f0c7v4qp.jpg" class="image-popup fh5co-board-img" title="2018.6.7">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwrfoz4ej30f0c7v4qp.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.6.7
-							</div>
-						</div>
-					
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubws2907zj30f04yltms.jpg" class="image-popup fh5co-board-img" title="2018.6.8">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubws2907zj30f04yltms.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.6.8
-							</div>
-						</div>
-					
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwss6waxj30bicmoqv5.jpg" class="image-popup fh5co-board-img" title="2018.6.16">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwss6waxj30bicmoqv5.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.6.16
-							</div>
-						</div>
-					
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwtjkvfzj30cacm47wi.jpg" class="image-popup fh5co-board-img" title="2018.6.17">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwtjkvfzj30cacm47wi.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.6.17
-							</div>
-						</div>
-					
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwtzzfboj30f00lxnpd.jpg" class="image-popup fh5co-board-img" title="2018.6.18">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwtzzfboj30f00lxnpd.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.6.18
-							</div>
-						</div>
-					
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwujtfrlj30f066fk8t.jpg" class="image-popup fh5co-board-img" title="2018.6.30">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwujtfrlj30f066fk8t.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.6.30
-							</div>
-						</div>
-					
-						<div class="item">
-							<div class="animate-box">
-								<a href="https://ws1.sinaimg.cn/large/005XbSjxly1fubwv2q3jej30f019fhdu.jpg" class="image-popup fh5co-board-img" title="2018.7.1">
-									<img src="https://ws1.sinaimg.cn/large/005XbSjxly1fubwv2q3jej30f019fhdu.jpg" alt="Free HTML5 Bootstrap template">
-								</a>
-							</div>
-							<div class="fh5co-desc">
-								2018.7.1
-							</div>
-					</div>
-
-					</div>
+					<h1>因技术问题网站正在维护中...</h1>
 				</div>
 			</div>
 		</div>
 
 		<footer id="fh5co-footer">
+			
 			<div class="container">
 				<div class="row row-padded">
 					<div class="col-md-12 text-center">
@@ -522,7 +161,6 @@
 				</div>
 			</div>
 		</footer>
-
 
 		<!-- jQuery -->
 		<script src="js/jquery.min.js"></script>
@@ -538,6 +176,17 @@
 		<script src="js/salvattore.min.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
-		
+
 	</body>
 </html>
+
+
+<!--
+
+	注 意 :
+
+	1.图片过大可以使用格式工厂等软件进行压缩
+	2.微博最大支持15MB，sm.ms最大支持5MB
+	3.有资金的可以使用CDN
+
+-->
