@@ -26,7 +26,7 @@
 		shuffleIndex = 0;
 	    $('#QPlayer .cover').attr('title', '点击关闭随机播放');
 	} else {
-		isShuffle = false;
+		isShuffle = true;
 	    $('#QPlayer .cover').attr('title', '点击开启随机播放');
 	}
 
@@ -44,7 +44,7 @@
 			}
 			$('#playlist').scrollTop(temp);
 		}
-	} 
+	}
 
 	var play = function(){
 		audio.play();
@@ -128,10 +128,10 @@
 		audio.currentTime = 0;
 		if (isShuffle){
 			shufflePlay(1);
-		} else { 
+		} else {
 			if (currentTrack < playlist.length) switchTrack(++currentTrack);
 		}
-		
+
 	}
 
 	var beforeLoad = function(){
@@ -194,7 +194,7 @@
 			switchTrack(++currentTrack);
 		}
 	});
-	
+
 	$('#playlist li').each(function(i){
 		$(this).on('click', function(){
 			if (isShuffle) {
@@ -214,7 +214,7 @@
 	$('#QPlayer .liebiao,#QPlayer .liebiao').on('click', function(){
 		var pl = $('#playlist');
 		if (pl.hasClass('go') === false) {
-			pl.css({"max-height":"360px","transition":"max-height .5s ease"});		
+			pl.css({"max-height":"360px","transition":"max-height .5s ease"});
 			pl.css("border", "1px solid #dedede");
 			pl.addClass('go');
 		} else {
@@ -222,7 +222,7 @@
 			pl.css("border", "0");
 			pl.removeClass('go');
 		}
-	});		
+	});
 
 	$("#QPlayer .ssBtn").on('click', function(){
 		var mA = $("#QPlayer");
@@ -234,11 +234,11 @@
 			}
 			mA.css("transform", "translateX(250px)");
 		    $('.ssBtn .adf').addClass('on');
-		} else {	
+		} else {
 			mA.css("transform", "translateX(0px)");
-            $('.ssBtn .adf').removeClass('on') 	
+            $('.ssBtn .adf').removeClass('on')
 		}
-	}); 
+	});
 
 	$("#player .cover").on('click',function(){
 		isShuffle = !isShuffle;
@@ -345,7 +345,7 @@ function showNotification(info) {
 	//用width:auto来自动获取通知栏宽度
 	var width = $('.qplayer-notification').css({"opacity":"0", "width":"auto"}).width() + 20;
 	$('.qplayer-notification').css({"width":"50px","opacity":"1"});
-	
+
 	autoShowTimer = setTimeout(function(){
 		$('.qplayer-notification').css({"width":width,"transition":"all .7s ease"});
 		$('.qplayer-notification .close').delay(500).show(0);
@@ -355,7 +355,7 @@ function showNotification(info) {
 
 
 function closeNotification() {
-	isShowNotification = false;
+	isShowNotification = ture;
 	$('.qplayer-notification').css({"width":"50px","transition":"all .7s ease"});
 	$('.qplayer-notification .close').delay(500).hide(0);
 	setTimeout(function(){
